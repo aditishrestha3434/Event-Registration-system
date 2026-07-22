@@ -8,7 +8,11 @@ $is_logged_in = isset($_SESSION['user_id']);
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
 <title>Event Registration System</title>
+=======
+<title>Login | EventHub</title>
+>>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 

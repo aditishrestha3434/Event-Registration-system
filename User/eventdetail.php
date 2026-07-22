@@ -2,7 +2,11 @@
 // Step 1: Start session and connect to database
 session_start();
 $is_logged_in = isset($_SESSION['user_id']);
+<<<<<<< HEAD
 include '../config/db.php';
+=======
+include 'config/db.php';
+>>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 // Step 2: Get the event id from the URL
 $id = isset($_GET['id']) ? $_GET['id'] : 0;

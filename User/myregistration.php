@@ -8,7 +8,11 @@ if (!isset($_SESSION['user_id'])) {
 $is_logged_in = true;
 
 // Step 2: Connect to database
+<<<<<<< HEAD
 include '../config/db.php';
+=======
+include 'config/db.php';
+>>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 // Step 3: Fetch this user's registrations, joined with event details
 $stmt = mysqli_prepare($conn, "SELECT registrations.id, registrations.status, registrations.registered_at,

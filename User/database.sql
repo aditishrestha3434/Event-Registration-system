@@ -34,7 +34,10 @@ CREATE TABLE IF NOT EXISTS registrations (
     user_id INT NOT NULL,
     event_id INT NOT NULL,
     message TEXT,
+<<<<<<< HEAD
     
+=======
+>>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
     status ENUM('Confirmed', 'Pending') DEFAULT 'Confirmed',
     registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
@@ -43,7 +46,14 @@ CREATE TABLE IF NOT EXISTS registrations (
 );
 
 -- Step 5: Seed a few sample events so the site isn't empty
+<<<<<<< HEAD
 -- INSERT INTO events (event_name, event_date, event_time, venue, description, capacity, image_url) VALUES
 -- ('Web Development Workshop', '2026-08-20', '10:00:00', 'Prime College', 'Learn HTML, CSS, JavaScript, PHP and MySQL by building real-world projects. Designed for beginners who want practical experience.', 100, 'https://picsum.photos/400/220?1'),
 -- ('AI Seminar', '2026-08-25', '13:00:00', 'Hall A', 'Introduction to Artificial Intelligence, covering the basics of machine learning and real-world applications.', 80, 'https://picsum.photos/400/220?2'),
 -- ('Hackathon 2026', '2026-08-30', '09:00:00', 'Innovation Lab', '24-hour coding competition for students to build and pitch a working prototype.', 60, 'https://picsum.photos/400/220?3');
+=======
+INSERT INTO events (event_name, event_date, event_time, venue, description, capacity, image_url) VALUES
+('Web Development Workshop', '2026-08-20', '10:00:00', 'Prime College', 'Learn HTML, CSS, JavaScript, PHP and MySQL by building real-world projects. Designed for beginners who want practical experience.', 100, 'https://picsum.photos/400/220?1'),
+('AI Seminar', '2026-08-25', '13:00:00', 'Hall A', 'Introduction to Artificial Intelligence, covering the basics of machine learning and real-world applications.', 80, 'https://picsum.photos/400/220?2'),
+('Hackathon 2026', '2026-08-30', '09:00:00', 'Innovation Lab', '24-hour coding competition for students to build and pitch a working prototype.', 60, 'https://picsum.photos/400/220?3');
+>>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3

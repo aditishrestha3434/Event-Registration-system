@@ -1,7 +1,11 @@
 <?php
 // Step 1: Start session and connect to database
 session_start();
+<<<<<<< HEAD
 include '../config/db.php';
+=======
+include 'config/db.php';
+>>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 // Step 2: Get form values
 $email = $_POST['email'];
