@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS registrations (
     user_id INT NOT NULL,
     event_id INT NOT NULL,
     message TEXT,
+    
     status ENUM('Confirmed', 'Pending') DEFAULT 'Confirmed',
     registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
