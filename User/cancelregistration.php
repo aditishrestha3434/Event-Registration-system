@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Step 2: Connect to database
-<<<<<<< HEAD
+<<<<<<< HEADj
 include '../config/db.php';
 =======
 include 'config/db.php';

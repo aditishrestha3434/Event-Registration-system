@@ -4,11 +4,8 @@ session_start();
 $is_logged_in = isset($_SESSION['user_id']);
 
 // Step 2: Connect to database and fetch the next 3 upcoming events
-<<<<<<< HEAD
+
 include '../config/db.php';
-=======
-include 'config/db.php';
->>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
  $preview_result = mysqli_query($conn, "SELECT *, (capacity - (SELECT COUNT(*) FROM registrations WHERE registrations.event_id = events.id)) AS seats_left FROM events WHERE event_date >= CURDATE() ORDER BY event_date ASC LIMIT 3");
 ?>
 <!DOCTYPE html>
@@ -16,11 +13,10 @@ include 'config/db.php';
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
 <title> Event Registration System</title>
-=======
+
 <title>EventHub - Event Registration System</title>
->>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
@@ -37,11 +33,9 @@ body{
     color:#333;
 }
 
-<<<<<<< HEAD
 /* Header  */
 =======
 /* Header - same as every other page */
->>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 header{
     background:#2563EB;
