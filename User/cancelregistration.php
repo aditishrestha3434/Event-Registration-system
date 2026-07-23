@@ -7,11 +7,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Step 2: Connect to database
-<<<<<<< HEADj
 include '../config/db.php';
-=======
-include 'config/db.php';
->>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 // Step 3: Get registration id from URL
 $id = $_GET['id'];

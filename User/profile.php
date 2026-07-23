@@ -7,11 +7,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Step 2: Connect to database
-<<<<<<< HEAD
 include '../config/db.php';
-=======
-include 'config/db.php';
->>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 
 // Step 3: Fetch the logged-in user's data
 $stmt = mysqli_prepare($conn, "SELECT * FROM users WHERE id = ?");
@@ -24,11 +20,7 @@ $user = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
 <title>My Profile - Event Registration System</title>
-=======
-<title>My Profile | EventHub</title>
->>>>>>> a49a4951ba294234c7add2e85f8f402cbe966ed3
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>

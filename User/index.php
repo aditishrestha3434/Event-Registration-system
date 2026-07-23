@@ -33,9 +33,8 @@ body{
     color:#333;
 }
 
-/* Header  */
-=======
-/* Header - same as every other page */
+
+/* Header */
 
 header{
     background:#2563EB;
